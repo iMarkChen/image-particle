@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#canvas1 {
+    position: absolute;
+}
+.controls {
+    position: absolute;
+    z-index: 100;
+}
+#button1 {
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    transition: 0.5s;
+}
+#button1:hover {
+    background-color: #fff;
+    color: #000;
+}
+#img1 {
+    display: none;
+}
