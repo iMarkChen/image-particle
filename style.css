@@ -25,4 +25,6 @@
 }
 #img1 {
     display: none;
+    width: auto;
+    height: 500px;
 }
