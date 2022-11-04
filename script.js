@@ -1,8 +1,8 @@
 window.addEventListener('load', function () {
     const canvas = document.getElementById('canvas1')
     const ctx = canvas.getContext('2d')
-    canvas.width = window.innerWidth
-    canvas.height = window.innerHeight
+    canvas.width = window.innerWidth - 1
+    canvas.height = window.innerHeight - 1
 
     class Particle {
         constructor(effect, x, y, color) {
@@ -31,7 +31,7 @@ window.addEventListener('load', function () {
             this.dx = this.effect.mouse.x - this.x
             this.dy = this.effect.mouse.y - this.y
             this.distance = Math.sqrt(this.dx * this.dx + this.dy * this.dy)
-            this.force = -1000 / this.distance 
+            this.force = -1000 / this.distance
             if (this.distance < this.effect.mouse.radius) {
                 this.angle = Math.atan2(this.dy, this.dx)
                 this.vx += this.force * Math.cos(this.angle)
